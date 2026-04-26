@@ -1,87 +1,153 @@
+:root {
+  --brand-blue: #2260a8;
+  --brand-green: #5fb95f;
+  --surface: #ffffff;
+  --page-bg: #f5f6fa;
+  --text: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
-  background: #f5f6fa;
-  color: #222;
+  background: var(--page-bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  background: var(--surface);
+  color: var(--brand-blue);
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 999;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 12px;
 }
 
 .hero {
-  background: linear-gradient(120deg, #2260a8 55%, #5fb95f 100%);
+  background: linear-gradient(120deg, var(--brand-blue) 55%, var(--brand-green) 100%);
   color: #fff;
   text-align: center;
-  padding: 50px 20px 30px 20px;
+  padding: 50px 20px 30px;
 }
 
 .profile-img {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #fff;
   margin-bottom: 18px;
-  box-shadow: 0 2px 10px rgba(34,96,168,0.15);
+  box-shadow: 0 2px 10px rgba(34, 96, 168, 0.15);
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
   font-weight: 700;
   margin-bottom: 8px;
 }
 
 .subtitle {
-  font-size: 1.2em;
+  font-size: 1.1rem;
   margin-top: 2px;
   margin-bottom: 8px;
 }
 
 .university {
-  font-size: 1em;
-  opacity: 0.85;
+  font-size: 1rem;
+  opacity: 0.9;
   margin-bottom: 18px;
+}
+
+.quick-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 0 14px;
+}
+
+.quick-nav a {
+  color: #e8f4ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+}
+
+.quick-nav a:hover,
+.quick-nav a:focus-visible {
+  border-bottom-color: #fff;
 }
 
 .contact-links {
   margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
+
 .btn {
   background: #fff;
-  color: #2260a8;
+  color: var(--brand-blue);
   border-radius: 22px;
   padding: 8px 18px;
-  margin: 0 6px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 2px 6px rgba(34,96,168,0.10);
-  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgba(34, 96, 168, 0.1);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
   border: none;
   display: inline-block;
 }
-.btn:hover {
-  background: #5fb95f;
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--brand-green);
   color: #fff;
+  transform: translateY(-1px);
 }
 
 main {
-  max-width: 800px;
+  max-width: 880px;
   margin: 0 auto;
   padding: 32px 16px;
 }
 
 .card {
-  background: #fff;
+  background: var(--surface);
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(34,96,168,0.08);
+  box-shadow: 0 2px 12px rgba(34, 96, 168, 0.08);
   padding: 26px 22px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 h2 {
   margin-top: 0;
-  color: #2260a8;
+  color: var(--brand-blue);
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.25rem;
   margin-bottom: 10px;
-  letter-spacing: 1px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  color: #1a4a80;
+  font-size: 1.05rem;
 }
 
 ul {
@@ -89,12 +155,78 @@ ul {
   padding-left: 20px;
 }
 
+.pill-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill-list li {
+  background: #e8f0fa;
+  color: #17477f;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.project-grid article {
+  border: 1px solid #d9e6f5;
+  border-radius: 10px;
+  padding: 14px;
+  background: #fbfdff;
+}
+
+.callout {
+  margin-top: 12px;
+  background: #eef6ec;
+  border-left: 4px solid var(--brand-green);
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+a:focus-visible {
+  outline: 3px solid #8cc6ff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 footer {
   text-align: center;
-  color: #2260a8;
+  color: var(--brand-blue);
   background: #e2ecf6;
   padding: 18px 0;
-  font-size: 1em;
-  margin-top: 32px;
+  font-size: 1rem;
+  margin-top: 28px;
   border-top: 1px solid #c2d5eb;
+}
+
+.footnote {
+  margin: 6px 0 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 560px) {
+  .card {
+    padding: 20px 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
 }
