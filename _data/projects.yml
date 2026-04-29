@@ -1,0 +1,48 @@
+- id: soilbiomass
+  title: "SOILBIOMASS+"
+  meta_en: "Horizon Europe · 2026–2030 · Coordinator / PI"
+  meta_es: "Horizon Europe · 2026–2030 · Coordinador / PI"
+  text_en: "Multi-partner European project on sustainable biomass production, soil health restoration, land-use transitions and decision-support for policy and practice."
+  text_es: "Proyecto europeo multi-socio sobre producción sostenible de biomasa, restauración de salud del suelo, transiciones de uso de la tierra y apoyo a decisiones para política y práctica."
+
+- id: sustainable
+  title: "sustAInable"
+  meta_en: "UKRI AI Metascience Fellowship · 2026–2028 · PI"
+  meta_es: "UKRI AI Metascience Fellowship · 2026–2028 · PI"
+  text_en: "AI-driven research programme examining how data science and AI can support sustainable agri-food futures, with attention to skills, research capacity and labour-market transformation."
+  text_es: "Programa de investigación impulsado por IA que examina cómo la ciencia de datos y la IA pueden apoyar futuros agroalimentarios sostenibles, con atención a habilidades, capacidad investigadora y transformación del mercado laboral."
+
+- id: ai4cea
+  title: "AI4CEA / UK–EU pump priming"
+  meta_en: "British Academy Horizon Europe Pump Priming · PI"
+  meta_es: "British Academy Horizon Europe Pump Priming · PI"
+  text_en: "Development of UK–EU collaborations around AI, digital decision-support and sustainable controlled environment agriculture."
+  text_es: "Desarrollo de colaboraciones Reino Unido–UE sobre IA, apoyo digital a decisiones y agricultura sostenible en ambiente controlado."
+
+- id: pathways
+  title: "PATHWAYS"
+  meta_en: "European livestock systems · Postdoctoral research leadership"
+  meta_es: "Sistemas ganaderos europeos · Liderazgo de investigación postdoctoral"
+  text_en: "Economic and technical assessment of future livestock systems, including sustainability indicators, scenario analysis and policy-relevant evidence."
+  text_es: "Evaluación económica y técnica de sistemas ganaderos futuros, incluyendo indicadores de sostenibilidad, análisis de escenarios y evidencia relevante para políticas."
+
+- id: espi
+  title: "ESPI / sustainable productivity indicators"
+  meta_en: "Sustainable productivity · agriculture · environmental indicators"
+  meta_es: "Productividad sostenible · agricultura · indicadores ambientales"
+  text_en: "Development of productivity indicators that integrate market outputs, inputs and environmental pressures such as emissions and nutrient surpluses."
+  text_es: "Desarrollo de indicadores de productividad que integran productos de mercado, insumos y presiones ambientales como emisiones y excedentes de nutrientes."
+
+- id: agriculture40
+  title: "Agriculture 4.0, robotics and labour-market transformation"
+  meta_en: "Chile and UK · routine intensity · skills · automation"
+  meta_es: "Chile y Reino Unido · intensidad rutinaria · habilidades · automatización"
+  text_en: "Research on how robotics, AI and digital agriculture affect work, skills, productivity and technology adoption in agri-food systems."
+  text_es: "Investigación sobre cómo la robótica, la IA y la agricultura digital afectan el trabajo, las habilidades, la productividad y la adopción tecnológica en sistemas agroalimentarios."
+
+- id: adras
+  title: "UK King Prawn / AD–RAS integration"
+  meta_en: "Circular economy · farm diversification · consumer preferences"
+  meta_es: "Economía circular · diversificación agrícola · preferencias de consumidores"
+  text_en: "Research on integrating anaerobic digesters and recirculating aquaculture systems for UK-grown prawns, including economic feasibility and willingness-to-pay analysis."
+  text_es: "Investigación sobre la integración de digestores anaeróbicos y sistemas de recirculación acuícola para langostinos producidos en Reino Unido, incluyendo factibilidad económica y disposición a pagar."
