@@ -1,17 +1,16 @@
-:root {
-  --blue: #174a7c;
-  --blue-dark: #0f2f4f;
-  --green: #4b9b65;
-  --ink: #17202a;
-  --muted: #5d6d7e;
-  --bg: #f4f7fb;
-  --card: #ffffff;
-  --border: #dce6f1;
-  --shadow: 0 14px 35px rgba(23, 74, 124, 0.10);
+﻿:root {
+  --blue: #1E5A8A;
+  --blue-dark: #123B63;
+  --green: #3F8F6B;
+  --ink: #15212B;
+  --muted: #5B6B79;
+  --bg: #F5F8FC;
+  --card: #FFFFFF;
+  --border: #D9E4EF;
+  --shadow: 0 16px 36px rgba(18, 59, 99, 0.10);
 }
 
 * { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -27,15 +26,14 @@ a {
   font-weight: 650;
   text-decoration: none;
 }
-
 a:hover { text-decoration: underline; }
 
 .hero {
   background:
-    radial-gradient(circle at top right, rgba(75, 155, 101, 0.65), transparent 35%),
+    radial-gradient(circle at top right, rgba(63, 143, 107, 0.45), transparent 35%),
     linear-gradient(135deg, var(--blue-dark), var(--blue));
   color: #fff;
-  padding: 24px clamp(18px, 4vw, 48px) 72px;
+  padding: 24px clamp(18px, 4vw, 48px) 76px;
 }
 
 .topbar {
@@ -49,9 +47,14 @@ a:hover { text-decoration: underline; }
 
 .topbar a {
   color: #fff;
-  opacity: 0.9;
+  opacity: 0.92;
   font-size: 0.95rem;
-  font-weight: 650;
+  font-weight: 700;
+}
+
+.lang-link img {
+  vertical-align: middle;
+  margin-right: 3px;
 }
 
 .hero-grid {
@@ -68,25 +71,26 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.12em;
   font-size: 0.82rem;
   font-weight: 800;
-  color: #cde7d2;
+  color: #CDE7D2;
   margin: 0 0 14px;
 }
 
 h1 {
   margin: 0 0 18px;
-  font-size: clamp(2.35rem, 6vw, 4.6rem);
+  font-size: clamp(2.45rem, 6vw, 4.8rem);
   line-height: 1.02;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.05em;
 }
 
 .lead {
   max-width: 800px;
   font-size: clamp(1.15rem, 2vw, 1.45rem);
   margin: 0 0 26px;
-  color: #eef6ff;
+  color: #EEF6FF;
 }
 
-.hero-actions, .contact-links {
+.hero-actions,
+.contact-links {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
@@ -94,7 +98,7 @@ h1 {
 
 .btn {
   display: inline-block;
-  padding: 10px 16px;
+  padding: 10px 17px;
   border-radius: 999px;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.42);
@@ -112,7 +116,7 @@ h1 {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.24);
   padding: 22px;
-  border-radius: 26px;
+  border-radius: 28px;
   max-width: 310px;
   text-align: center;
   backdrop-filter: blur(8px);
@@ -129,7 +133,7 @@ h1 {
 
 .profile-title {
   margin: 18px 0 0;
-  color: #eef6ff;
+  color: #EEF6FF;
   font-weight: 650;
 }
 
@@ -139,18 +143,22 @@ main {
   padding: 0 clamp(18px, 4vw, 48px) 36px;
 }
 
-.section {
-  margin-bottom: 34px;
-}
+.section { margin-bottom: 34px; }
 
-.intro, .highlight, .contact, .card, .project {
+.intro,
+.highlight,
+.contact,
+.card,
+.project {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 24px;
   box-shadow: var(--shadow);
 }
 
-.intro, .highlight, .contact {
+.intro,
+.highlight,
+.contact {
   padding: clamp(24px, 4vw, 38px);
 }
 
@@ -191,11 +199,12 @@ p { margin-top: 0; }
 .cards-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .cards-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
-.card {
-  padding: 22px;
-}
+.card { padding: 22px; }
 
-.card p:last-child, .project p:last-child, .highlight p:last-child, .contact p:last-child {
+.card p:last-child,
+.project p:last-child,
+.highlight p:last-child,
+.contact p:last-child {
   margin-bottom: 0;
 }
 
@@ -225,13 +234,13 @@ p { margin-top: 0; }
 }
 
 .highlight {
-  background: linear-gradient(135deg, #ffffff, #eef7f1);
+  background: linear-gradient(135deg, #FFFFFF, #EEF7F1);
 }
 
 .contact-links a {
   padding: 8px 14px;
   border-radius: 999px;
-  background: #eaf2fb;
+  background: #EAF2FB;
 }
 
 footer {
@@ -242,48 +251,22 @@ footer {
 }
 
 @media (max-width: 920px) {
-  .hero-grid, .project {
+  .hero-grid,
+  .project {
     grid-template-columns: 1fr;
   }
-
-  .profile-card {
-    justify-self: start;
-  }
-
-  .cards-four, .cards-three {
+  .profile-card { justify-self: start; }
+  .cards-four,
+  .cards-three {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
-  .topbar {
-    justify-content: flex-start;
-    gap: 12px;
-    margin-bottom: 34px;
-  }
-
-  .cards-four, .cards-three {
+  .topbar { justify-content: flex-start; }
+  .cards-four,
+  .cards-three {
     grid-template-columns: 1fr;
   }
-
-  .section-heading {
-    display: block;
-  }
-
-  .profile-img {
-    width: 150px;
-    height: 150px;
-  }
-}
-.lang-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.lang-link img {
-  width: 18px;
-  height: auto;
-  border-radius: 2px;
-  vertical-align: middle;
+  main { margin-top: -28px; }
 }
