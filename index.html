@@ -22,12 +22,14 @@ layout: null
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#cv">CV</a>
       <a href="#partners">For partners</a>
       <a href="#contact">Contact</a>
       <a href="./es/" aria-label="Spanish version" class="lang-link">
         <img src="https://flagcdn.com/w20/cl.png" alt="Chile flag">
         <img src="https://flagcdn.com/w20/es.png" alt="Spain flag">
-        Espa&ntilde;ol
+        Spanish
       </a>
     </nav>
 
@@ -40,9 +42,11 @@ layout: null
         </p>
 
         <div class="hero-actions">
-          <a href="mailto:j.camposgonzalez@reading.ac.uk" class="btn primary">Contact me</a>
+          <a href="https://orcid.org/0000-0001-7348-1827" class="btn" target="_blank" rel="noopener">ORCID</a>
           <a href="https://scholar.google.com/citations?user=t3BIgWYAAAAJ&hl=en" class="btn" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://uk.linkedin.com/in/jorgecampos2022" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.reading.ac.uk/agri-food-economics-marketing/our-staff/dr-jorge-campos-gonzalez" class="btn" target="_blank" rel="noopener">U. of Reading profile</a>
+          <a href="/assets/pdf/jorge-campos-gonzalez-cv.pdf" class="btn" target="_blank" rel="noopener">CV</a>
         </div>
       </div>
 
@@ -91,7 +95,11 @@ layout: null
     </section>
 
     <section class="section" id="projects">
-    <div class="project-list">
+    <div class="section-heading">
+  <h2>Selected projects</h2>
+  <p>Current and recent externally funded research leadership and collaboration.</p>
+</div>
+      <div class="project-list">
   {% for project in site.data.projects %}
     <article class="project">
       <div>
@@ -119,32 +127,41 @@ layout: null
 </div>
 
     <section class="section" id="publications">
-      <div class="section-heading">
-        <h2>Publications and methods</h2>
-        <p>Selected methodological contributions and research outputs.</p>
-      </div>
+  <div class="section-heading">
+    <h2>Selected publications and research outputs</h2>
+    <p>Selected outputs aligned with my current research agenda on AI, agri-tech, labour markets, productivity and sustainable food systems.</p>
+  </div>
 
-      <div class="grid cards-three">
-        <article class="card">
-          <h3>Text and labour-market analytics</h3>
-          <p>Methods using job advertisements, text data and task content to analyse skill demand, technological change and Agriculture 4.0.</p>
-        </article>
+  <div class="publication-list">
+    {% for group in site.data.publications.categories %}
+      <article class="card publication-group">
+        <h3>{{ group.heading_en }}</h3>
 
-        <article class="card">
-          <h3>Sustainability assessment</h3>
-          <p>Quantitative analysis of farm-level sustainability indicators, reliability of assessment constructs and links between structural farm characteristics and sustainability performance.</p>
-        </article>
+        {% for item in group.items %}
+          <div class="publication-item">
+            <p class="publication-meta">{{ item.type_en }} &middot; {{ item.year }}</p>
+            <p>{{ item.citation }}</p>
 
-        <article class="card">
-          <h3>Productivity and policy evidence</h3>
-          <p>Research on sustainable productivity, agri-food innovation, technology adoption, inequality, migration and human capital.</p>
-        </article>
-      </div>
+            {% if item.links %}
+              <p class="publication-links">
+                {% for link in item.links %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+                {% endfor %}
+              </p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </article>
+    {% endfor %}
+  </div>
 
-      <p class="link-line">
-        Full publication list: <a href="https://scholar.google.com/citations?user=t3BIgWYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      </p>
-    </section>
+  <p class="link-line">
+    Full publication list:
+    <a href="https://orcid.org/0000-0001-7348-1827" target="_blank" rel="noopener">ORCID</a>,
+    <a href="https://scholar.google.com/citations?user=t3BIgWYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>,
+    and <a href="/assets/pdf/jorge-campos-gonzalez-cv.pdf" target="_blank" rel="noopener">CV</a>.
+  </p>
+</section>
 
     <section class="section highlight" id="partners">
       <h2>For partners</h2>
@@ -156,14 +173,57 @@ layout: null
       </p>
     </section>
 
+    <section class="section" id="talks">
+      <div class="section-heading">
+        <h2>Recent talks and conference presentations</h2>
+        <p>Selected invited talks, expert engagement and conference contributions.</p>
+      </div>
+
+      <div class="grid cards-two">
+        <article class="card">
+          <h3>Invited talks and expert engagement</h3>
+          {% for item in site.data.talks.talks %}
+            <p>
+          <strong>{{ item.role }}.</strong> {{ item.event }}. Talk: "{{ item.title }}". {{ item.location }}, {{ item.date }}.
+          {% for link in item.links %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>.
+          {% endfor %}
+        </p>
+      {% endfor %}
+    </article>
+
+    <article class="card">
+      <h3>Conference presentations</h3>
+      {% for item in site.data.talks.conferences %}
+        <p>
+          <strong>{{ item.type }}.</strong> "{{ item.title }}". {{ item.event }}, {{ item.location }}, {{ item.date }}.
+        </p>
+      {% endfor %}
+    </article>
+  </div>
+</section>
+
+    <section class="section highlight" id="cv">
+      <h2>CV</h2>
+      <p>
+        A current academic CV is available as a PDF.
+      </p>
+      <p>
+        <a href="/assets/pdf/jorge-campos-gonzalez-cv.pdf" target="_blank" rel="noopener">Open or download CV</a>
+      </p>
+    </section>
+
     <section class="section contact" id="contact">
       <h2>Contact</h2>
       <p><strong>Email:</strong> <a href="mailto:j.camposgonzalez@reading.ac.uk">j.camposgonzalez@reading.ac.uk</a></p>
       <p><strong>Affiliation:</strong> School of Agriculture, Policy and Development, University of Reading, UK</p>
 
       <div class="contact-links">
+        <a href="https://orcid.org/0000-0001-7348-1827" target="_blank" rel="noopener">ORCID</a>
         <a href="https://scholar.google.com/citations?user=t3BIgWYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://uk.linkedin.com/in/jorgecampos2022" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.reading.ac.uk/agri-food-economics-marketing/our-staff/dr-jorge-campos-gonzalez" target="_blank" rel="noopener">U. of Reading profile</a>
+        <a href="/assets/pdf/jorge-campos-gonzalez-cv.pdf" target="_blank" rel="noopener">CV</a>
       </div>
     </section>
   </main>

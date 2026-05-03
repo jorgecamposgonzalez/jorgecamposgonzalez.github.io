@@ -1,0 +1,113 @@
+categories:
+  - id: ai-labour-agritech
+    heading_en: "AI, agri-tech and labour-market transformation"
+    heading_es: "IA, agrotecnolog&iacute;a y transformaci&oacute;n del mercado laboral"
+    items:
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
+        year: "2025"
+        citation: >-
+          Campos-Gonz&aacute;lez, J. 2025. The impact on the skill premium of the task content of jobs: Evidence from online job ads. Estudios de Econom&iacute;a, 52(1), 133-189.
+        links:
+          - label: "Article"
+            url: "https://estudiosdeeconomia.uchile.cl/index.php/EDE/article/view/78262"
+
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
+        year: "2025"
+        citation: >-
+          Campos-Gonz&aacute;lez, J. 2025. Natural disasters and technological upgrading: Estimating the impacts on demand for ICT labour with text. Natural Hazards, 121, 911-957.
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1007/s11069-024-06863-z"
+
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
+        year: "2024"
+        citation: >-
+          Campos-Gonz&aacute;lez, J. and K. Balcombe. 2024. The race between education and technology in Chile and its impact on the skill premium. Economic Modelling, 131, 106616.
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1016/j.econmod.2023.106616"
+          - label: "Data"
+            url: "https://doi.org/10.17632/8424ky469w.1"
+
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
+        year: "2021"
+        citation: >-
+          P&eacute;rez-Silva, R. and J. Campos-Gonz&aacute;lez. 2021. Agriculture 4.0? Studying the evidence for routinisation in Chilean agriculture. International Journal of Agriculture and Natural Resources, 48(3), 233-247.
+        links:
+          - label: "DOI"
+            url: "https://dx.doi.org/10.7764/ijanr.v48i3.2339"
+
+      - type_en: "Conference proceedings"
+        type_es: "Actas de conferencia"
+        year: "2024"
+        citation: >-
+          Campos-Gonz&aacute;lez, J., Y. Gadanakis, R. P&eacute;rez-Silva and D. Iakovidis. 2024. How fast is Agriculture 4.0 advancing in the UK? An analysis using employment routine intensity. Proceedings of the 7th Symposium on Agri-Tech Economics for Sustainable Futures.
+        links:
+          - label: "Repository"
+            url: "https://centaur.reading.ac.uk/121659/"
+
+  - id: sustainability-food-systems
+    heading_en: "Agri-food systems, sustainability and circular economy"
+    heading_es: "Sistemas agroalimentarios, sostenibilidad y econom&iacute;a circular"
+    items:
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
+        year: "2025"
+        citation: >-
+          Campos-Gonz&aacute;lez, J., Y. Gadanakis, T. Sanders, M. Mancini and I. Bateman. 2025. Transforming arable and dairy farming systems by adopting Anaerobic Digestion (AD) and Recirculating Aquaculture Systems (RAS) to address the demand for sustainable profitability, environment, and diets. Cogent Food & Agriculture, 11(1).
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1080/23311932.2025.2579888"
+
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
+        year: "2025"
+        citation: >-
+          Morello, T., Y. Gadanakis, J. Campos-Gonz&aacute;lez, M. Mancini, K. Howe, D. Tingley and I. Bateman. 2025. Sequestering Carbon Without Reducing Food Production: The Role of Recirculating Aquaculture Systems in Mitigating Carbon Leakage. Ecological Economics, 237, 108692.
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1016/j.ecolecon.2025.108692"
+
+      - type_en: "Conference proceedings"
+        type_es: "Actas de conferencia"
+        year: "2023"
+        citation: >-
+          Campos-Gonz&aacute;lez, J., Y. Gadanakis, M. Mancini and I. Bateman. 2023. Modelling the economic performance of Recirculating Aquaculture Systems (RAS) at the farm level. Proceedings of the 97th Annual Conference, Agricultural Economics Society.
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.22004/ag.econ.334548"
+
+  - id: productivity-decision-support
+    heading_en: "Productivity, innovation and decision-support"
+    heading_es: "Productividad, innovaci&oacute;n y apoyo a decisiones"
+    items:
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
+        year: "2024"
+        citation: >-
+          Gadanakis, Y., J. Campos-Gonz&aacute;lez and P. Jones. 2024. Linking Entrepreneurship to Productivity: Using a Composite Indicator for Farm-Level Innovation in UK Agriculture with Secondary Data. Agriculture, 14(3), 409.
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.3390/agriculture14030409"
+
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
+        year: "2024"
+        citation: >-
+          Iakovidis, D., Y. Gadanakis, J. Campos-Gonz&aacute;lez and J. Park. 2024. Optimising Decision Support Tools for the Agricultural Sector. Environment, Development and Sustainability.
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1007/s10668-024-04743-x"
+
+      - type_en: "Research presentation"
+        type_es: "Presentaci&oacute;n de investigaci&oacute;n"
+        year: "2026"
+        citation: >-
+          Campos-Gonz&aacute;lez, J. 2026. Estimating a Prototype Enhancing Agricultural Productivity Measurement for the UK. 8th Symposium on Agri-Tech Economics for Sustainable Futures, Harper Adams.
+        links:
+          - label: "Presentation"
+            url: "/assets/pdf/espi-uk-agricultural-productivity-2026.pdf"

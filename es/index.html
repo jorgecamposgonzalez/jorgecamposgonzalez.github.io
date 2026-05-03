@@ -22,11 +22,13 @@ layout: null
       <a href="#projects">Proyectos</a>
       <a href="#publications">Publicaciones</a>
       <a href="#partners">Colaboraciones</a>
+      <a href="#talks">Charlas</a>
+      <a href="#cv">CV</a>
       <a href="#contact">Contacto</a>
       <a href="../" aria-label="English version" class="lang-link">
   <img src="https://flagcdn.com/w20/gb.png" alt="UK flag">
   <img src="https://flagcdn.com/w20/us.png" alt="US flag">
-  English
+  Inglés
 </a>
     </nav>
 
@@ -38,9 +40,11 @@ layout: null
           Desarrollo evidencia económica y basada en datos sobre cómo la IA, las tecnologías agroalimentarias y las transiciones sostenibles transforman la productividad, los mercados laborales y los sistemas alimentarios.
         </p>
         <div class="hero-actions">
-          <a href="mailto:j.camposgonzalez@reading.ac.uk" class="btn primary">Contacto</a>
+          <a href="https://orcid.org/0000-0001-7348-1827" class="btn" target="_blank" rel="noopener">ORCID</a>
           <a href="https://scholar.google.com/citations?user=t3BIgWYAAAAJ&hl=en" class="btn" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://uk.linkedin.com/in/jorgecampos2022" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.reading.ac.uk/agri-food-economics-marketing/our-staff/dr-jorge-campos-gonzalez" class="btn" target="_blank" rel="noopener">Perfil U. of Reading</a>
+          <a href="/assets/pdf/jorge-campos-gonzalez-cv.pdf" class="btn" target="_blank" rel="noopener">CV</a>
         </div>
       </div>
       <div class="profile-card">
@@ -84,7 +88,11 @@ layout: null
     </section>
 
     <section class="section" id="projects">
-    <div class="project-list">
+    <div class="section-heading">
+  <h2>Proyectos seleccionados</h2>
+  <p>Liderazgo y colaboración en investigación financiada externa, actual y reciente.</p>
+</div>
+      <div class="project-list">
   {% for project in site.data.projects %}
     <article class="project">
       <div>
@@ -112,28 +120,41 @@ layout: null
 </div>
 
     <section class="section" id="publications">
-      <div class="section-heading">
-        <h2>Publicaciones y métodos</h2>
-        <p>Contribuciones metodológicas y resultados de investigación seleccionados.</p>
-      </div>
-      <div class="grid cards-three">
-        <article class="card">
-          <h3>Análisis de texto y mercados laborales</h3>
-          <p>Métodos basados en avisos de empleo, datos de texto y contenido de tareas para analizar demanda de habilidades, cambio tecnológico y Agricultura 4.0.</p>
-        </article>
-        <article class="card">
-          <h3>Evaluación de sostenibilidad</h3>
-          <p>Análisis cuantitativo de indicadores de sostenibilidad a nivel predial, confiabilidad de constructos de evaluación y vínculos entre características estructurales de los predios y desempeño sostenible.</p>
-        </article>
-        <article class="card">
-          <h3>Productividad y evidencia para políticas</h3>
-          <p>Investigación sobre productividad sostenible, innovación agroalimentaria, adopción tecnológica, desigualdad, migración y capital humano.</p>
-        </article>
-      </div>
-      <p class="link-line">
-        Lista completa de publicaciones: <a href="https://scholar.google.com/citations?user=t3BIgWYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      </p>
-    </section>
+  <div class="section-heading">
+    <h2>Publicaciones y resultados seleccionados</h2>
+    <p>Resultados seleccionados alineados con mi agenda actual de investigaci&oacute;n sobre IA, agrotecnolog&iacute;a, mercados laborales, productividad y sistemas alimentarios sostenibles.</p>
+  </div>
+
+  <div class="publication-list">
+    {% for group in site.data.publications.categories %}
+      <article class="card publication-group">
+        <h3>{{ group.heading_es }}</h3>
+
+        {% for item in group.items %}
+          <div class="publication-item">
+            <p class="publication-meta">{{ item.type_es }} &middot; {{ item.year }}</p>
+            <p>{{ item.citation }}</p>
+
+            {% if item.links %}
+              <p class="publication-links">
+                {% for link in item.links %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+                {% endfor %}
+              </p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </article>
+    {% endfor %}
+  </div>
+
+  <p class="link-line">
+    Lista completa:
+    <a href="https://orcid.org/0000-0001-7348-1827" target="_blank" rel="noopener">ORCID</a>
+    <a href="https://scholar.google.com/citations?user=t3BIgWYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>,
+    y <a href="/assets/pdf/jorge-campos-gonzalez-cv.pdf" target="_blank" rel="noopener">CV</a>.
+  </p>
+</section>
 
     <section class="section highlight" id="partners">
       <h2>Colaboraciones</h2>
@@ -145,13 +166,57 @@ layout: null
       </p>
     </section>
 
+    <section class="section" id="talks">
+  <div class="section-heading">
+    <h2>Charlas y presentaciones recientes</h2>
+    <p>Selecci&oacute;n de charlas invitadas, participaci&oacute;n experta y presentaciones en conferencias.</p>
+  </div>
+
+  <div class="grid cards-two">
+    <article class="card">
+      <h3>Charlas invitadas y participaci&oacute;n experta</h3>
+      {% for item in site.data.talks.talks %}
+        <p>
+          <strong>{{ item.role }}.</strong> {{ item.event }}. Talk: "{{ item.title }}". {{ item.location }}, {{ item.date }}.
+          {% for link in item.links %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>.
+          {% endfor %}
+        </p>
+      {% endfor %}
+    </article>
+
+    <article class="card">
+      <h3>Presentaciones en conferencias</h3>
+      {% for item in site.data.talks.conferences %}
+        <p>
+          <strong>{{ item.type }}.</strong> "{{ item.title }}". {{ item.event }}, {{ item.location }}, {{ item.date }}.
+        </p>
+      {% endfor %}
+    </article>
+  </div>
+</section>
+
+
+    <section class="section highlight" id="cv">
+      <h2>CV</h2>
+      <p>
+      Un CV acad&eacute;mico actualizado est&aacute; disponible en formato PDF.
+      </p>
+      <p>
+      <a href="/assets/pdf/jorge-campos-gonzalez-cv.pdf" target="_blank" rel="noopener">Abrir o descargar CV</a>
+      </p>
+    </section>
+
     <section class="section contact" id="contact">
       <h2>Contacto</h2>
-      <p><strong>Email:</strong> <a href="mailto:j.camposgonzalez@reading.ac.uk">j.camposgonzalez@reading.ac.uk</a></p>
+      <p><strong>Email:</strong> <a href="mailto:j.camposgonzalez@reading.ac.uk">jorge.camposgonzalez@reading.ac.uk</a></p>
       <p><strong>Afiliación:</strong> School of Agriculture, Policy and Development, University of Reading, Reino Unido</p>
       <div class="contact-links">
+        <a href="https://orcid.org/0000-0001-7348-1827" target="_blank" rel="noopener">ORCID</a>
         <a href="https://scholar.google.com/citations?user=t3BIgWYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://uk.linkedin.com/in/jorgecampos2022" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.reading.ac.uk/agri-food-economics-marketing/our-staff/dr-jorge-campos-gonzalez" target="_blank" rel="noopener">Perfil U. of Reading</a>
+        <a href="/assets/pdf/jorge-campos-gonzalez-cv.pdf" target="_blank" rel="noopener">CV</a>
       </div>
     </section>
   </main>
