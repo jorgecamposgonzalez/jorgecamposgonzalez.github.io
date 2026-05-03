@@ -283,3 +283,27 @@ footer {
   }
   main { margin-top: -26px; }
 }
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 0;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f3efe7;
+  color: var(--blue-dark);
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.86rem;
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.project-links a:hover {
+  background: #e8e2d8;
+  text-decoration: none;
+}

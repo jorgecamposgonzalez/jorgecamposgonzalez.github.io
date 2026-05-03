@@ -91,23 +91,32 @@ layout: null
     </section>
 
     <section class="section" id="projects">
-      <div class="section-heading">
-        <h2>Selected projects</h2>
-        <p>Current and recent externally funded research leadership and collaboration.</p>
+    <div class="project-list">
+  {% for project in site.data.projects %}
+    <article class="project">
+      <div>
+        <h3>{{ project.title }}</h3>
+        <p class="meta">{{ project.meta_en }}</p>
+
+        {% if project.url or project.deliverables %}
+          <p class="project-links">
+            {% if project.url %}
+              <a href="{{ project.url }}" target="_blank" rel="noopener">Project website</a>
+            {% endif %}
+
+            {% if project.deliverables %}
+              {% for item in project.deliverables %}
+                <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.label_en }}</a>
+              {% endfor %}
+            {% endif %}
+          </p>
+        {% endif %}
       </div>
 
-      <div class="project-list">
-        {% for project in site.data.projects %}
-          <article class="project">
-            <div>
-              <h3>{{ project.title }}</h3>
-              <p class="meta">{{ project.meta_en }}</p>
-            </div>
-            <p>{{ project.text_en }}</p>
-          </article>
-        {% endfor %}
-      </div>
-    </section>
+      <p>{{ project.text_en }}</p>
+    </article>
+  {% endfor %}
+</div>
 
     <section class="section" id="publications">
       <div class="section-heading">

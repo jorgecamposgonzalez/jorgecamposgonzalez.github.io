@@ -81,48 +81,32 @@
     </section>
 
     <section class="section" id="projects">
-      <div class="section-heading">
-        <h2>Proyectos seleccionados</h2>
-        <p>Liderazgo y colaboración en investigación financiada actual y reciente.</p>
+    <div class="project-list">
+  {% for project in site.data.projects %}
+    <article class="project">
+      <div>
+        <h3>{{ project.title }}</h3>
+        <p class="meta">{{ project.meta_es }}</p>
+
+        {% if project.url or project.deliverables %}
+          <p class="project-links">
+            {% if project.url %}
+              <a href="{{ project.url }}" target="_blank" rel="noopener">Sitio del proyecto</a>
+            {% endif %}
+
+            {% if project.deliverables %}
+              {% for item in project.deliverables %}
+                <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.label_es }}</a>
+              {% endfor %}
+            {% endif %}
+          </p>
+        {% endif %}
       </div>
-      <div class="project-list">
-        <article class="project">
-          <div>
-            <h3>SOILBIOMASS+</h3>
-            <p class="meta">Horizon Europe · 2026–2030 · Coordinador / Investigador Principal</p>
-          </div>
-          <p>Proyecto europeo multi-socio sobre producción sostenible de biomasa, restauración de salud del suelo, transiciones de uso de la tierra y herramientas de apoyo a decisiones para política y práctica.</p>
-        </article>
-        <article class="project">
-          <div>
-            <h3>sustAInable</h3>
-            <p class="meta">UKRI AI Metascience Fellowship · 2026–2028 · Investigador Principal</p>
-          </div>
-          <p>Programa de investigación sobre cómo la ciencia de datos y la IA pueden apoyar futuros agroalimentarios sostenibles, con énfasis en habilidades, capacidad investigadora y transformación del mercado laboral.</p>
-        </article>
-        <article class="project">
-          <div>
-            <h3>AI4CEA / UK–EU pump priming</h3>
-            <p class="meta">British Academy Horizon Europe Pump Priming · Investigador Principal</p>
-          </div>
-          <p>Desarrollo de colaboraciones Reino Unido–Unión Europea sobre IA, apoyo digital a decisiones y agricultura sostenible en ambientes controlados.</p>
-        </article>
-        <article class="project">
-          <div>
-            <h3>PATHWAYS</h3>
-            <p class="meta">Sistemas ganaderos europeos · Liderazgo postdoctoral</p>
-          </div>
-          <p>Evaluación económica y técnica de sistemas ganaderos futuros, incluyendo indicadores de sostenibilidad, análisis de escenarios y evidencia relevante para políticas públicas.</p>
-        </article>
-        <article class="project">
-          <div>
-            <h3>UK King Prawn / integración AD–RAS</h3>
-            <p class="meta">Economía circular · diversificación agrícola · preferencias de consumidores</p>
-          </div>
-          <p>Investigación sobre integración de digestores anaeróbicos y sistemas de recirculación acuícola para producción de langostinos en Reino Unido, incluyendo factibilidad económica y disposición a pagar.</p>
-        </article>
-      </div>
-    </section>
+
+      <p>{{ project.text_es }}</p>
+    </article>
+  {% endfor %}
+</div>
 
     <section class="section" id="publications">
       <div class="section-heading">

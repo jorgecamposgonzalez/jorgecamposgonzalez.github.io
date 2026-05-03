@@ -25,6 +25,11 @@
   meta_es: "Sistemas ganaderos europeos · Liderazgo de investigación postdoctoral"
   text_en: "Economic and technical assessment of future livestock systems, including sustainability indicators, scenario analysis and policy-relevant evidence."
   text_es: "Evaluación económica y técnica de sistemas ganaderos futuros, incluyendo indicadores de sostenibilidad, análisis de escenarios y evidencia relevante para políticas."
+  url: "https://pathways-project.com/"
+  deliverables:
+    - label_en: "Project deliverables"
+      label_es: "Entregables del proyecto"
+      url: "https://pathways-project.com/deliverables/"
 
 - id: espi
   title: "ESPI / sustainable productivity indicators"
