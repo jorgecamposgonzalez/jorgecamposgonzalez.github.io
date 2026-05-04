@@ -1,0 +1,58 @@
+talks:
+  - title: "Economics and sustainability of livestock production"
+    event: "EU Livestock 2030: Aligning Policy, Practice & Consumer Expectations"
+    role: "Invited speaker"
+    location: "European Parliament, Brussels"
+    date: "18 March 2026"
+    links:
+      - label: "YouTube presentation"
+        url: "https://www.youtube.com/watch?v=apsxYYDZ7_o&t=300s"
+
+  - title: "PATHWAYS framework as a tool to evaluate trade-offs and synergies in agri-food transitions"
+    event: "How can the nature-based solutions approach help build sustainable food systems?"
+    role: "Invited speaker and policy panel participant"
+    location: "NetworkNature, Brussels"
+    date: "18 March 2026"
+    links:
+      - label: "YouTube presentation (from 2:07:00)"
+        url: "https://www.youtube.com/live/s2UFXikKj2o"
+
+  - title: "Expert contribution to the Demystifying AI programme"
+    event: "Demystifying AI"
+    role: "Invited expert"
+    location: "Association for Science and Discovery Centres, UK"
+    date: "2026"
+    links:
+      - label: "Programme details"
+        url: "https://www.sciencecentres.org.uk/news/asdc-launches-national-science-engagement-programme-demystifying-ai/"
+
+conferences:
+  - title: "Estimating a Prototype Enhancing Agricultural Productivity Measurement for the UK"
+    event: "8th Symposium on Agri-Tech Economics for Sustainable Futures"
+    location: "Global Institute for Agri-Tech Economics, Harper Adams"
+    date: "15-16 January 2026"
+    type: "Talk"
+
+  - title: "Behind the Scores: Evaluating Sustainability Constructs and Farm Structural Factors in European Livestock Systems"
+    event: "EEAP 2025"
+    location: "Innsbruck, Austria"
+    date: "25 August 2025"
+    type: "Talk"
+
+  - title: "Integrating consumers' attitudes towards UK-grown King Prawn, integrating anaerobic digestors (AD) and recirculating aquaculture systems (RAS) at arable and dairy farms"
+    event: "LEAP Conference 2025"
+    location: "University of Oxford"
+    date: "7 April 2025"
+    type: "Poster"
+
+  - title: "Agriculture 4.0 deployment in the UK"
+    event: "7th Symposium on Agri-Tech Economics for Sustainable Futures"
+    location: "University of Reading, UK"
+    date: "28-29 September 2024"
+    type: "Talk and Scientific Committee member"
+
+  - title: "Economics of Diversification at arable and dairy farms in the UK"
+    event: "97th Annual Conference, Agricultural Economics Society"
+    location: "University of Warwick, UK"
+    date: "2023"
+    type: "Talk"
