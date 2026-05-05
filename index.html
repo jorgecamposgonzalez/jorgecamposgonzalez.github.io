@@ -24,7 +24,7 @@ layout: null
       <a href="#publications">Publications</a>
       <a href="#talks">Talks</a>
       <a href="#cv">CV</a>
-      <a href="#partners">For partners</a>
+      <a href="#partners">For partners & Postgraduate students</a>
       <a href="#contact">Contact</a>
       <a href="./es/" aria-label="Spanish version" class="lang-link">
         <img src="https://flagcdn.com/w20/cl.png" alt="Chile flag">
@@ -36,9 +36,9 @@ layout: null
     <div class="hero-grid">
       <div class="hero-text">
         <p class="eyebrow">Senior Research Fellow &middot; University of Reading</p>
-        <h1>Dr Jorge Campos Gonz&aacute;lez</h1>
+        <h1>Jorge Campos-Gonz&aacute;lez</h1>
         <p class="lead">
-          I develop economic and data-driven evidence on how AI, agri-tech and sustainability transitions reshape productivity, labour markets and food systems.
+          I develop economic and data-driven evidence on how AI, technology and sustainability transitions reshape productivity, labour markets and agri-food systems.
         </p>
 
         <div class="hero-actions">
@@ -52,7 +52,7 @@ layout: null
 
       <div class="profile-card">
         <img src="profile.jpg" alt="Dr Jorge Campos Gonz&aacute;lez" class="profile-img">
-        <p class="profile-title">Agri-food economics &middot; AI and labour markets &middot; sustainable productivity</p>
+        <p class="profile-title">Technological change, AI and labour markets &middot; Agri-food economics &middot; Sustainable productivity</p>
       </div>
     </div>
   </header>
@@ -61,7 +61,10 @@ layout: null
     <section class="section intro" id="about">
       <h2>About</h2>
       <p>
-        I am a Senior Research Fellow at the School of Agriculture, Policy and Development, University of Reading. My research connects agricultural and food economics, environmental sustainability, labour economics, AI and data science. I work across academic, policy and industry contexts to generate evidence for sustainable agri-food transitions.
+        I am a Senior Research Fellow at the School of Agriculture, Policy and Development, University of Reading. 
+        My research connects labour economics, AI and data science and socio-economics and environmental sustainability transitions in agri-food systems. 
+        I work across academic, policy and industry contexts. Before my PhD, I worked in public policy in Chile as an Agricultural Economist in the Ministry of Agriculture and
+        later as Head of the Department of Information Assurance in the Ministry of Social Development, where I led multidisciplinary teams and data-driven policy tools.
       </p>
     </section>
 
@@ -79,17 +82,17 @@ layout: null
 
         <article class="card">
           <h3>Agri-tech economics</h3>
-          <p>Evaluating adoption, productivity and economic feasibility of robotics, digital agriculture, controlled environment agriculture and automation in agri-food systems.</p>
+          <p>Evaluating adoption, productivity and economic feasibility of robotics, digital agriculture, controlled environment agriculture (CEA) and automation in agri-food systems.</p>
         </article>
 
         <article class="card">
-          <h3>Sustainable productivity</h3>
-          <p>Developing indicators and empirical methods to integrate productivity measurement with environmental pressures, including emissions, nutrient surpluses and soil-related outcomes.</p>
+          <h3>Sustainable agri-food productivity</h3>
+          <p>Developing indicators and empirical methods to integrate productivity measurement with environmental pressures, and evaluating diversification strategies.</p>
         </article>
 
         <article class="card">
           <h3>Food-system transitions</h3>
-          <p>Assessing future livestock systems, circular economy approaches, farm diversification and sustainability scenarios across European agri-food systems.</p>
+          <p>Assessing future agri-food systems, circular economy approaches, farm diversification and sustainability scenarios across European agri-food systems.</p>
         </article>
       </div>
     </section>
@@ -99,24 +102,18 @@ layout: null
   <h2>Selected projects</h2>
   <p>Current and recent externally funded research leadership and collaboration.</p>
 </div>
-      <div class="project-list">
+<div class="project-list">
   {% for project in site.data.projects %}
     <article class="project">
       <div>
         <h3>{{ project.title }}</h3>
         <p class="meta">{{ project.meta_en }}</p>
 
-        {% if project.url or project.deliverables %}
+        {% if project.links %}
           <p class="project-links">
-            {% if project.url %}
-              <a href="{{ project.url }}" target="_blank" rel="noopener">Project website</a>
-            {% endif %}
-
-            {% if project.deliverables %}
-              {% for item in project.deliverables %}
-                <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.label_en }}</a>
-              {% endfor %}
-            {% endif %}
+            {% for link in project.links %}
+              <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label_en }}</a>
+            {% endfor %}
           </p>
         {% endif %}
       </div>
@@ -129,7 +126,7 @@ layout: null
     <section class="section" id="publications">
   <div class="section-heading">
     <h2>Selected publications and research outputs</h2>
-    <p>Selected outputs aligned with my current research agenda on AI, agri-tech, labour markets, productivity and sustainable food systems.</p>
+    <p>Selected outputs aligned with my current research agenda on AI, agri-tech, labour markets, productivity and sustainable agri-food systems.</p>
   </div>
 
   <div class="publication-list">
@@ -163,17 +160,7 @@ layout: null
   </p>
 </section>
 
-    <section class="section highlight" id="partners">
-      <h2>For partners</h2>
-      <p>
-        I collaborate with universities, research institutes, companies, policy organisations and international partners on AI, agri-food systems, sustainable productivity, labour-market analytics and research proposal development.
-      </p>
-      <p>
-        I am particularly interested in partnerships on AI impacts on labour markets, agri-tech adoption, sustainable food-system transitions, environmental productivity indicators, and policy-facing evidence for the UK, Europe and Latin America.
-      </p>
-    </section>
-
-    <section class="section" id="talks">
+<section class="section" id="talks">
       <div class="section-heading">
         <h2>Recent talks and conference presentations</h2>
         <p>Selected invited talks, expert engagement and conference contributions.</p>
@@ -203,7 +190,35 @@ layout: null
   </div>
 </section>
 
-    <section class="section highlight" id="cv">
+<section class="section highlight" id="partners">
+      <h2>For partners, prospective PhD and postgraduate students</h2>
+      <p>
+        I collaborate with universities, research institutes, companies, policy organisations and international partners on AI, 
+        agri-food systems, sustainable productivity, labour-market analytics and research proposal development.
+      </p>
+      <p>
+        I am particularly interested in partnerships on AI impacts on labour markets, agri-tech adoption, sustainable agri-food system transitions,
+        environmental productivity indicators, and policy-facing evidence for Chile, the UK, and the rest of Latin America and Europe.
+      </p>
+      <p>
+        I also welcome enquiries from prospective PhD and postgraduate students interested in topics related to:
+      </p>
+
+       <ul class="feature-list">
+       <li>AI and labour-market impacts in agri-food systems</li>
+        <li>technology adoption and Agriculture 4.0/5.0</li>
+        <li>agricultural productivity and competitiveness</li>
+        <li>sustainability and resilience in agri-food systems</li>
+        <li>applied econometrics, text analysis and data science</li>
+        </ul>
+
+      <p>
+       I am also interested in identifying candidates to supervise towards an MSCA Postdoctoral Fellowship or others at the University of Reading. Here a link to the
+    <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships/6-steps-to-prepare-your-application-postdoctoral-fellowships-call" target="_blank" rel="noopener">MSCA Postdoctoral Fellowship application guidance</a>.
+  </p>
+    </section>
+
+        <section class="section highlight" id="cv">
       <h2>CV</h2>
       <p>
         A current academic CV is available as a PDF.

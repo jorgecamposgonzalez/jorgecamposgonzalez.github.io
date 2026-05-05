@@ -21,7 +21,7 @@ layout: null
       <a href="#research">Investigación</a>
       <a href="#projects">Proyectos</a>
       <a href="#publications">Publicaciones</a>
-      <a href="#partners">Colaboraciones</a>
+      <a href="#partners">Colaboración institucional, PhD y Postgraduados</a>
       <a href="#talks">Charlas</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contacto</a>
@@ -35,7 +35,7 @@ layout: null
     <div class="hero-grid">
       <div class="hero-text">
         <p class="eyebrow">Senior Research Fellow · University of Reading</p>
-        <h1>Dr. Jorge Campos González</h1>
+        <h1>Jorge Campos-González</h1>
         <p class="lead">
           Desarrollo evidencia económica y basada en datos sobre cómo la IA, las tecnologías agroalimentarias y las transiciones sostenibles transforman la productividad, los mercados laborales y los sistemas alimentarios.
         </p>
@@ -58,7 +58,10 @@ layout: null
     <section class="section intro" id="about">
       <h2>Sobre mí</h2>
       <p>
-        Soy Senior Research Fellow en la School of Agriculture, Policy and Development de la University of Reading, Reino Unido. Mi investigación conecta economía agrícola y alimentaria, sostenibilidad ambiental, economía laboral, inteligencia artificial y ciencia de datos. Trabajo con universidades, organismos públicos, empresas y socios internacionales para generar evidencia útil para transiciones agroalimentarias sostenibles.
+        Soy Investigador Senior Asociado (Senior Research Fellow) en la Escuela de Agricultura, Política y Desarrollo de la Universidad de Reading, Reino Unido.
+        Mi investigación conecta economía agrícola y alimentaria, sustentabilidad ambiental, economía laboral, inteligencia artificial y ciencia de datos. 
+        Trabajo con universidades, organismos públicos, empresas y socios internacionales. Antes de mi doctorado, trabajé en políticas públicas en Chile como economista agrario en el Ministerio de Agricultura y,
+        posteriormente, como economista y jefe de Departamento en el Ministerio de Desarrollo Social y Familia, donde lideré equipos multidisciplinarios y herramientas de políticas basadas en datos.
       </p>
     </section>
 
@@ -92,24 +95,18 @@ layout: null
   <h2>Proyectos seleccionados</h2>
   <p>Liderazgo y colaboración en investigación financiada externa, actual y reciente.</p>
 </div>
-      <div class="project-list">
+<div class="project-list">
   {% for project in site.data.projects %}
     <article class="project">
       <div>
         <h3>{{ project.title }}</h3>
         <p class="meta">{{ project.meta_es }}</p>
 
-        {% if project.url or project.deliverables %}
+        {% if project.links %}
           <p class="project-links">
-            {% if project.url %}
-              <a href="{{ project.url }}" target="_blank" rel="noopener">Sitio del proyecto</a>
-            {% endif %}
-
-            {% if project.deliverables %}
-              {% for item in project.deliverables %}
-                <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.label_es }}</a>
-              {% endfor %}
-            {% endif %}
+            {% for link in project.links %}
+              <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label_es }}</a>
+            {% endfor %}
           </p>
         {% endif %}
       </div>
@@ -156,16 +153,6 @@ layout: null
   </p>
 </section>
 
-    <section class="section highlight" id="partners">
-      <h2>Colaboraciones</h2>
-      <p>
-        Colaboro con universidades, centros de investigación, empresas, organizaciones de política pública y socios internacionales en IA, sistemas agroalimentarios, productividad sostenible, análisis de mercados laborales y desarrollo de propuestas de investigación.
-      </p>
-      <p>
-        Estoy especialmente interesado en colaboraciones sobre impactos de la IA en mercados laborales, adopción de tecnologías agroalimentarias, transiciones sostenibles de sistemas alimentarios, indicadores de productividad ambiental y evidencia para políticas públicas en Reino Unido, Europa y América Latina.
-      </p>
-    </section>
-
     <section class="section" id="talks">
   <div class="section-heading">
     <h2>Charlas y presentaciones recientes</h2>
@@ -196,6 +183,31 @@ layout: null
   </div>
 </section>
 
+<section class="section highlight" id="partners">
+  <h2>Colaboraci&oacute;n y supervisi&oacute;n</h2>
+
+  <p>
+    Estoy interesado en colaborar con investigadores, responsables de pol&iacute;ticas p&uacute;blicas, socios de la industria y consorcios internacionales que
+    trabajen en econom&iacute;a agroalimentaria, IA, productividad, mercados laborales y sostenibilidad.
+  </p>
+
+  <p>
+    Tambi&eacute;n recibo consultas de potenciales estudiantes de doctorado y posgrado interesados en temas relacionados con:
+  </p>
+
+  <ul class="feature-list">
+    <li>impactos de la IA y los mercados laborales en sistemas agroalimentarios</li>
+    <li>adopci&oacute;n tecnol&oacute;gica y Agricultura 4.0/5.0</li>
+    <li>productividad y competitividad agr&iacute;cola</li>
+    <li>sostenibilidad y resiliencia en sistemas agroalimentarios</li>
+    <li>econometr&iacute;a aplicada, an&aacute;lisis de texto y ciencia de datos</li>
+  </ul>
+
+  <p>
+    Tambi&eacute;n estoy interesado en identificar candidatos para supervisar una postulaci&oacute;n a una MSCA Postdoctoral Fellowship en la Universidad de Reading.
+    <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships/6-steps-to-prepare-your-application-postdoctoral-fellowships-call" target="_blank" rel="noopener">Gu&iacute;a para preparar una postulaci&oacute;n MSCA Postdoctoral Fellowship</a>.
+  </p>
+</section>
 
     <section class="section highlight" id="cv">
       <h2>CV</h2>
@@ -209,8 +221,8 @@ layout: null
 
     <section class="section contact" id="contact">
       <h2>Contacto</h2>
-      <p><strong>Email:</strong> <a href="mailto:j.camposgonzalez@reading.ac.uk">jorge.camposgonzalez@reading.ac.uk</a></p>
-      <p><strong>Afiliación:</strong> School of Agriculture, Policy and Development, University of Reading, Reino Unido</p>
+      <p><strong>Email:</strong> <a href="mailto:jorge.camposgonzalez@reading.ac.uk">jorge.camposgonzalez@reading.ac.uk</a></p>
+      <p><strong>Afiliación:</strong> Escuela de Agricultura, Política y Desarrollo, Universidad de Reading, Reino Unido</p>
       <div class="contact-links">
         <a href="https://orcid.org/0000-0001-7348-1827" target="_blank" rel="noopener">ORCID</a>
         <a href="https://scholar.google.com/citations?user=t3BIgWYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
