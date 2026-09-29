@@ -2,12 +2,12 @@
   title: "SOILBIOMASS+"
   meta_en: "Horizon Europe · 2026–2030 · Coordinator / PI"
   meta_es: "Horizon Europe · 2026–2030 · Coordinador / PI"
-  text_en: "Multi-partner European project on sustainable biomass production, soil health restoration, land-use transitions and decision-support for policy and practice (starting September 2026)."
-  text_es: "Proyecto europeo multi-socio sobre producción sostenible de biomasa, restauración del suelo, transiciones de uso de la tierra y apoyo a decisiones para política y práctica."
+  text_en: "Ongoing multi-partner European project on sustainable biomass production, soil health restoration, land-use transitions and decision-support for policy and practice, launched on 1 September 2026."
+  text_es: "Proyecto europeo multisocio en marcha desde el 1 de septiembre de 2026 sobre producción sostenible de biomasa, restauración del suelo, transiciones de uso de la tierra y apoyo a decisiones para política y práctica."
   links:
-    - label_en: "Call details"
-      label_es: "Detalles de la convocatoria"
-      url: "https://cordis.europa.eu/programme/id/HORIZON_HORIZON-MISS-2025-05-SOIL-07"  
+    - label_en: "Project details"
+      label_es: "Ficha del proyecto"
+      url: "https://cordis.europa.eu/project/id/101297008"  
 
 - id: sustainable
   title: "sustAInable"
