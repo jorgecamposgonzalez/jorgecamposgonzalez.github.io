@@ -246,5 +246,10 @@ layout: null
   <footer>
     <p>&copy; 2026 Dr Jorge Campos Gonz&aacute;lez</p>
   </footer>
+  {% if site.cloudflare_web_analytics_token %}
+  <!-- Cloudflare Web Analytics -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"{{ site.cloudflare_web_analytics_token }}"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+  {% endif %}
 </body>
 </html>
