@@ -87,21 +87,32 @@ categories:
     items:
       - type_en: "Journal article"
         type_es: "Art&iacute;culo en revista"
+        year: "2026"
+        citation: >-
+          Campos-Gonz&aacute;lez, J., J. Lowenberg-DeBoer and D. Paparas. 2026. Integrating productivity and environmental pressures in UK agriculture: an ESPI-based sustainability indicator. Environmental and Sustainability Indicators, 32, 101559.
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1016/j.indic.2026.101559"
+          - label: "Article"
+            url: "https://www.sciencedirect.com/science/article/pii/S2665972726004484"
+
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
+        year: "2025"
+        citation: >-
+          Iakovidis, D., Y. Gadanakis, J. Campos-Gonz&aacute;lez and J. Park. 2025. Optimising Decision Support Tools for the Agricultural Sector. Environment, Development and Sustainability, 27, 25043-25067 (first published online 3 April 2024).
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1007/s10668-024-04743-x"
+
+      - type_en: "Journal article"
+        type_es: "Art&iacute;culo en revista"
         year: "2024"
         citation: >-
           Gadanakis, Y., J. Campos-Gonz&aacute;lez and P. Jones. 2024. Linking Entrepreneurship to Productivity: Using a Composite Indicator for Farm-Level Innovation in UK Agriculture with Secondary Data. Agriculture, 14(3), 409.
         links:
           - label: "DOI"
             url: "https://doi.org/10.3390/agriculture14030409"
-
-      - type_en: "Journal article"
-        type_es: "Art&iacute;culo en revista"
-        year: "2024"
-        citation: >-
-          Iakovidis, D., Y. Gadanakis, J. Campos-Gonz&aacute;lez and J. Park. 2024. Optimising Decision Support Tools for the Agricultural Sector. Environment, Development and Sustainability.
-        links:
-          - label: "DOI"
-            url: "https://doi.org/10.1007/s10668-024-04743-x"
 
       - type_en: "Research presentation"
         type_es: "Presentaci&oacute;n de investigaci&oacute;n"
