@@ -36,6 +36,12 @@ talks:
         url: "https://www.sciencecentres.org.uk/news/asdc-launches-national-science-engagement-programme-demystifying-ai/"
 
 conferences:
+  - title: "Bridging Practice and Process: Combining LCA and Multi-criteria Sustainability Assessment for Farm-Level Insights"
+    event: "LCA Food 2026: 15th International Conference on Life Cycle Assessment of Food"
+    location: "Montr&eacute;al, Canada"
+    date: "12-15 October 2026"
+    type: "Poster"
+
   - title: "Estimating a Prototype Enhancing Agricultural Productivity Measurement for the UK"
     event: "8th Symposium on Agri-Tech Economics for Sustainable Futures"
     location: "Global Institute for Agri-Tech Economics, Harper Adams"
