@@ -419,3 +419,25 @@ footer {
 .feature-list li {
   margin-bottom: 6px;
 }
+
+/* Keep the fixed navigation above the content on narrow screens. */
+@media (max-width: 1100px) {
+  .topbar {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .topbar a { flex-shrink: 0; }
+}
+
+@media (max-width: 640px) {
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .contact a { overflow-wrap: anywhere; }
+}

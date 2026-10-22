@@ -1,0 +1,64 @@
+/* Extend the shared site styles only for the doctoral information page. */
+.phd-page .phd-hero {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.phd-page .hero h1 {
+  max-width: 980px;
+  white-space: normal;
+  font-size: clamp(2rem, 4.4vw, 3.6rem);
+  line-height: 1.12;
+}
+
+.phd-page .topbar {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.phd-page .topbar a {
+  flex-shrink: 0;
+}
+
+.phd-page [aria-current="page"] {
+  border-bottom: 2px solid var(--blue-dark);
+}
+
+.phd-page section,
+.phd-page main {
+  scroll-margin-top: 90px;
+}
+
+.phd-page .funding-priority h3 {
+  font-size: 1.3rem;
+}
+
+.phd-page .source-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.phd-page a {
+  overflow-wrap: anywhere;
+}
+
+.phd-page .skip-link {
+  position: fixed;
+  top: 8px;
+  left: 18px;
+  padding: 8px 14px;
+  background: var(--card);
+  z-index: 1001;
+  transform: translateY(-200%);
+}
+
+.phd-page .skip-link:focus {
+  transform: translateY(0);
+}
+
+.phd-page a:focus-visible {
+  outline: 2px solid var(--blue-dark);
+  outline-offset: 4px;
+}
